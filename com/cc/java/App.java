@@ -5,9 +5,9 @@ public class App {
 
     public static void main(String[] args) {
       
-        Queen queen = new Queen();
-        Drone drone = new Drone();
-        Worker worker = new Worker();
+        HoneyBee queen = new Queen();
+        HoneyBee drone = new Drone();
+        HoneyBee worker = new Worker();
 
         output(queen.doYourJob());
         output(drone.doYourJob());
@@ -19,8 +19,11 @@ public class App {
         output(drone.fly());
         output(worker.fly());
 
+        output("-----aber: -----");
 
-
+        // Das sollte eigentlich nicht gehen!
+        HoneyBee bee = new HoneyBee();
+        output(bee.doYourJob());
   
     }
 
